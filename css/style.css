@@ -1,0 +1,263 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.purple {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: -35%;
+    top: -10%;
+    z-index: -1;
+    background-image: linear-gradient(to top, #963cfe, #d942ff);
+    border-radius: 0 0 50% 50%;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    -ms-border-radius: 0 0 50% 50%;
+    -o-border-radius: 0 0 50% 50%;
+}
+@media (max-width: 992px) {
+    .purple {
+        width: 600px;
+        height: 600px;
+        left: -25%;
+    }
+}
+@media (max-width: 768px) {
+    .purple {
+        display: none;
+    }
+}
+.container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    place-items: center;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+.container .mobile {
+    background-color: white;
+    width: 350px;
+    max-width: 350px;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 0 10px 1px #ccc;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.container .mobile .top {
+    background-color: white;
+    margin: 0 auto;
+    height: 35px;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.container .mobile .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #963cfe, #d942ff);
+    color: white;
+    padding: 0 15px;
+    border-radius: 25px 25px 5px 5px;
+    -webkit-border-radius: 25px 25px 5px 5px;
+    -moz-border-radius: 25px 25px 5px 5px;
+    -ms-border-radius: 25px 25px 5px 5px;
+    -o-border-radius: 25px 25px 5px 5px;
+}
+.container .mobile .header i {
+    padding-top: 20px;
+}
+.container .mobile .header .cont {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 25px 10px 10px;
+}
+.container .mobile .header .cont img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.container .mobile .header .cont .info h3 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.container .mobile .header .cont .info p {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+.container .mobile .chat {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 0 0 25px 25px;
+    -webkit-border-radius: 0 0 25px 25px;
+    -moz-border-radius: 0 0 25px 25px;
+    -ms-border-radius: 0 0 25px 25px;
+    -o-border-radius: 0 0 25px 25px;
+}
+.container .mobile .chat p {
+    max-width: 200px;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.container .mobile .chat .sam {
+    background-color: #eddff8;
+    color: #d426ff;
+    border-radius: 10px 20px 20px 0;
+    -webkit-border-radius: 10px 20px 20px 0;
+    -moz-border-radius: 10px 20px 20px 0;
+    -ms-border-radius: 10px 20px 20px 0;
+    -o-border-radius: 10px 20px 20px 0;
+}
+.container .mobile .chat .per {
+    background-color: white;
+    color: #3c2550;
+    margin-left: auto;
+    border-radius: 20px 0 10px 20px;
+    -webkit-border-radius: 20px 0 10px 20px;
+    -moz-border-radius: 20px 0 10px 20px;
+    -ms-border-radius: 20px 0 10px 20px;
+    -o-border-radius: 20px 0 10px 20px;
+}
+.container .mobile .chat .pic {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    width: fit-content;
+}
+.container .mobile .chat .pic img {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+}
+.container .mobile .price {
+    margin-top: 20px;
+}
+.container .mobile .price form .rad {
+    background-image: linear-gradient(to right, #d942ff, #963cfe);
+    color: white;
+    margin-bottom: 10px;
+    max-width: 250px;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px 20px 20px 0;
+    -webkit-border-radius: 10px 20px 20px 0;
+    -moz-border-radius: 10px 20px 20px 0;
+    -ms-border-radius: 10px 20px 20px 0;
+    -o-border-radius: 10px 20px 20px 0;
+}
+.container .mobile .price form .rad label {
+    margin-left: 10px;
+    font-size: 14px;
+}
+.container .mobile .price form .rad strong {
+    margin-left: auto;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.container .mobile .price form .rad input {
+    accent-color: #963cfe;
+}
+.container .mobile .mes {
+    margin: 20px 0 10px;
+}
+.container .mobile .mes form div {
+    position: relative;
+}
+.container .mobile .mes form div input {
+    border: none;
+    outline: none;
+    display: block;
+    height: 50px;
+    width: 100%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.container .mobile .mes form ::placeholder {
+    padding-left: 20px;
+    color: #3c2550;
+    opacity: 0.7;
+}
+.container .mobile .mes form div i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #3c2550;
+    color: white;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.container .text {
+    width: 350px;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+.container .text h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #3c2550;
+}
+.container .text p {
+    line-height: 1.6;
+    color: #777;
+    letter-spacing: 0.75px;
+}
